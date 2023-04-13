@@ -188,6 +188,7 @@ const App = () => {
               src="./icon-arrow.svg"
               className="bg-purple rounded-full w-36 mt-28 -mb-7 h-auto p-5 mobile:w-16 mobile:m-auto mobile:-mb-5 mobile:mt-5 mobile:p-2"
               onClick={handleSubmit}
+              alt="arrow enter button"
               style={{ cursor: "pointer" }}
             ></img>
           </div>
