@@ -4,6 +4,9 @@ module.exports = {
   content: ["./src/**/*.{ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        mobile: { max: "1200px" },
+      },
       colors: {
         offWhite: "#f0f0f0",
         lightGrey: "#dbdbdb",
@@ -14,6 +17,7 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "10rem",
+        mobile: "6rem",
       },
       fontFamily: {
         poppins: ['"Poppins"', "sans-serif"],
