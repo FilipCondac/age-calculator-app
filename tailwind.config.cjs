@@ -13,7 +13,7 @@ module.exports = {
         lightRed: "#ff5757",
       },
       borderRadius: {
-        "4xl": "8rem",
+        "4xl": "10rem",
       },
       fontFamily: {
         poppins: ['"Poppins"', "sans-serif"],
