@@ -44,7 +44,6 @@ const App = () => {
     }
 
     // Set the age in the state
-    setUserAge({ years, months, days });
 
     return {
       years: years,
@@ -126,11 +125,13 @@ const App = () => {
   const handleSubmit = () => {
     // Validate the input fields before calculating the age
     if (validateInput()) {
-      calculateAge({
+      const age = calculateAge({
         year: parseInt(year),
         month: parseInt(month),
         day: parseInt(day),
       });
+
+      setUserAge(age);
     }
   };
 
@@ -186,7 +187,7 @@ const App = () => {
           <div className="-mb-10">
             <img
               src="./icon-arrow.svg"
-              className="bg-purple rounded-full w-36 mt-28 -mb-7 h-auto p-5 mobile:w-16 mobile:m-auto mobile:-mb-5 mobile:mt-5 mobile:p-2"
+              className="bg-purple rounded-full w-36 mt-28 -mb-7 p-5 m-5 mobile:w-16 mobile:m-auto mobile:-mb-5 mobile:mt-5 mobile:p-2"
               onClick={handleSubmit}
               alt="arrow enter button"
               style={{ cursor: "pointer" }}
